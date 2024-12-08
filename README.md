@@ -11,10 +11,10 @@ go get -u github.com/afeiship/go-tinypng
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
-    "fmt"
-	
+
 	"github.com/afeiship/go-tinypng"
 )
 
@@ -27,15 +27,15 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	
+
 	fmt.Println(result1)
-	
+
 	// compress image from url
 	result2, err := client.CompressFromURL("https://example.com/image.png")
 	if err != nil {
 		log.Fatal(err)
 	}
-	
+
 	fmt.Println(result2)
 }
 ```
