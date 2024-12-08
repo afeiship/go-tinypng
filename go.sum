@@ -1,5 +1,7 @@
 github.com/afeiship/go-fetch v1.0.6 h1:+RoGWhOlD/iVx15TlE3XWJjKoKtQijAiOMPpwuH3OAI=
 github.com/afeiship/go-fetch v1.0.6/go.mod h1:Y8OqPF+CozTlPZjFr4hPB7snenD5jyzqsmYw2PUGmmc=
+github.com/afeiship/go-fetch v1.0.7 h1://oRetxG7KGEzNCoWXyU0Q7m/0g0KJEn7UJxvX+8Dzs=
+github.com/afeiship/go-fetch v1.0.7/go.mod h1:Y8OqPF+CozTlPZjFr4hPB7snenD5jyzqsmYw2PUGmmc=
 github.com/afeiship/go-reader v1.0.3 h1:Eg2dCJb2S9ck/VjtxR46UKXzZYVO8Iy6aUkd5CTlJ9I=
 github.com/afeiship/go-reader v1.0.3/go.mod h1:pw5D8IW1lbpve9qzj4KW3YpsJ7rxc/nZb9BxWEF5Jrg=
 github.com/afeiship/nx v1.0.4 h1:EEmZX8Ma9Lm5IBJTJmv46HanJrBxrcBkLvEkdDyJmt8=

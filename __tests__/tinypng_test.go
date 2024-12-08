@@ -2,10 +2,12 @@ package tinypng
 
 import (
 	"github.com/afeiship/go-tinypng"
+	"os"
 	"testing"
 )
 
-var client = tinypng.New("your_api_key")
+var apiKey = os.Getenv("TINYPNG_API_KEY")
+var client = tinypng.New(apiKey)
 
 func TestCompress(f *testing.T) {
 	res, err := client.Compress("./test.png")

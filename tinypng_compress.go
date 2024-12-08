@@ -12,6 +12,21 @@ import (
 //--user api:API_KEY \
 //--data-binary @01.png
 
+type CompressResult struct {
+	Input struct {
+		Size int    `json:"size"`
+		Type string `json:"type"`
+	} `json:"input"`
+	Output struct {
+		Size   int     `json:"size"`
+		Type   string  `json:"type"`
+		Width  int     `json:"width"`
+		Height int     `json:"height"`
+		Ratio  float64 `json:"ratio"`
+		Url    string  `json:"url"`
+	} `json:"output"`
+}
+
 func (c *Client) Compress(filepath string) (string, error) {
 
 	apiUrl := fmt.Sprintf("%s/shrink", BaseUrl)
