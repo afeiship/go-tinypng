@@ -27,7 +27,7 @@ type CompressResult struct {
 	} `json:"output"`
 }
 
-func (c *Client) Compress(filepath string) (string, error) {
+func (c *Client) CompressFromFile(filepath string) (string, error) {
 
 	apiUrl := fmt.Sprintf("%s/shrink", BaseUrl)
 
