@@ -48,3 +48,8 @@ func (c *Client) Compress(filepath string) (string, error) {
 		Body: fileData,
 	})
 }
+
+func (c *Client) CompressUrl(url string) (string, error) {
+	// TODO: implement
+	return "", nil
+}
