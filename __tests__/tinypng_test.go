@@ -17,3 +17,12 @@ func TestCompress(f *testing.T) {
 
 	f.Log(res)
 }
+
+func TestCompressFromURL(f *testing.T) {
+	res, err := client.CompressFromURL("https://via.placeholder.com/150")
+	if err != nil {
+		f.Fatal(err)
+	}
+
+	f.Log(res)
+}

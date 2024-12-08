@@ -49,7 +49,20 @@ func (c *Client) Compress(filepath string) (string, error) {
 	})
 }
 
-func (c *Client) CompressUrl(url string) (string, error) {
-	// TODO: implement
-	return "", nil
+func (c *Client) CompressFromURL(url string) (string, error) {
+	apiUrl := fmt.Sprintf("%s/shrink", BaseUrl)
+	auth := fmt.Sprintf("api:%s", c.ApiKey)
+	authHeader := base64.StdEncoding.EncodeToString([]byte(auth))
+
+	return fetch.Post(apiUrl, &fetch.Config{
+		DataType: fetch.JSON,
+		Headers: map[string]string{
+			"Authorization": "Basic " + authHeader,
+		},
+		Body: map[string]any{
+			"source": map[string]string{
+				"url": url,
+			},
+		},
+	})
 }
