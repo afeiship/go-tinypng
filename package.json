@@ -1,11 +1,16 @@
 {
   "name": "golang-library",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tinypng sdk for golang.",
   "license": "MIT",
   "scripts": {
     "test": "go test __tests__/*.go -v",
     "release": "release-it"
-  }
+  },
+  "keywords": [
+    "golang",
+    "imagemin",
+    "tinypng"
+  ]
 }
