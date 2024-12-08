@@ -5,6 +5,13 @@ import (
 	"testing"
 )
 
-func TestSayHi(f *testing.T) {
-	tinypng.SayHi()
+var client = tinypng.New("your_api_key")
+
+func TestCompress(f *testing.T) {
+	res, err := client.Compress("./test.png")
+	if err != nil {
+		f.Fatal(err)
+	}
+
+	f.Log(res)
 }
