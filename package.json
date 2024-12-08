@@ -1,21 +1,11 @@
 {
-  "name": "docker-scrapy-splash",
-  "version": "1.0.0",
+  "name": "golang-library",
   "private": true,
-  "description": "Docker for scrapy-splash.",
-  "homepage": "https://js.work",
-  "author": {
-    "name": "afeiship",
-    "email": "1290657123@qq.com"
-  },
-  "scripts": {
-    "docker:up": "docker-compose up -d",
-    "docker:down": "docker-compose down",
-    "docker:restart": "npm run docker:down && npm run docker:up"
-  },
+  "version": "1.0.0",
+  "description": "Tinypng sdk for golang.",
   "license": "MIT",
-  "generator": "@jswork/generator-github",
-  "devDependencies": {
-    "prettier": "^2.6.2"
+  "scripts": {
+    "test": "go test __tests__/*.go -v",
+    "release": "release-it"
   }
 }

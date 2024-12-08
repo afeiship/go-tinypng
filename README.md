@@ -1,12 +1,14 @@
-# docker-scrapy-splash
-> Docker for scrapy-splash.
+# go-tinypng
+> Tinypng sdk for golang.
+
+## installation
+```sh
+go get -u github.com/afeiship/go-tinypng
+```
 
 ## usage
-```shell
-# start service
-git clone git@github.com:afeiship/docker-scrapy-splash.git
-docker-compose up -d
+```go
+package main
 
-# check
-open http://127.0.0.1:8050
+// code here
 ```

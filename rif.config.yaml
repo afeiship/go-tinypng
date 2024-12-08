@@ -1,0 +1,15 @@
+name: golang-library
+files:
+  - '*.*'
+  - '.*'
+  - '*'
+  - '__tests__/*.go'
+  - '!node_modules'
+  - '!rif.config.yaml'
+replacements:
+  - from: /pkgjson-description/g
+    to: Tinypng sdk for golang.
+  - from: /pkgjson/g
+    to: ${PROJECT_NAME}
+  - from: /pkgname/g
+    to: tinypng
